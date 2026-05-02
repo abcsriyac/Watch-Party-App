@@ -1,0 +1,99 @@
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  background: #fff8f0;
+  color: #4a3f35;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background: #fff4e6;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 2px 4px 12px rgba(0,0,0,0.1);
+}
+
+.stats-card {
+  background: #ffe5b4;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: #ffd699;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.5rem;
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.form select,
+.form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background: #ffb347;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #ff8c00;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th,
+table td {
+  border: 1px solid #e0cda9;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.edit {
+  background: #ffcc5c;
+}
+
+.delete {
+  background: #ff6b6b;
+}
+
+.edit:hover {
+  background: #f4d35e;
+}
+
+.delete:hover {
+  background: #ff4b4b;
+}

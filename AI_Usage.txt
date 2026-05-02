@@ -1,0 +1,14 @@
+AI Usage
+1. For this project, I used ChatGPT as an AI assistant.
+
+2. I primarily used it for two tasks:
+Debugging – When some of my React code or Python code wasn’t working, I used ChatGPT to 
+help identify errors and suggest fixes.
+Code generation and guidance – For parts of the app I wasn’t sure how to implement,
+such as building the report interface or dynamic dropdowns, I used ChatGPT
+to generate example code and explain how it works.
+
+3. I always verified the AI-generated code myself by testing it in the app,
+making sure it worked correctly, and modifying it where necessary to
+fit my database schema and project requirements. This way, I ensured
+that the final solution was fully functional and customized for my application.
