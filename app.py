@@ -70,7 +70,7 @@ def add_session():
     data = request.json
 
     try:
-        with db.session.begin():  # ✅ explicit transaction
+        with db.session.begin():  
             session = WatchSession(
                 movie_id=data['movie_id'],
                 host_id=data['host_id'],
@@ -115,14 +115,14 @@ def update_session(id):
 
     with session_lock:
 
-    session.movie_id = data.get('movie_id', session.movie_id)
-    session.host_id = data.get('host_id', session.host_id)
-    session.date = data.get('date', session.date)
-    session.time = data.get('time', session.time)
-    session.location = data.get('location', session.location)
+        session.movie_id = data.get('movie_id', session.movie_id)
+        session.host_id = data.get('host_id', session.host_id)
+        session.date = data.get('date', session.date)
+        session.time = data.get('time', session.time)
+        session.location = data.get('location', session.location)
 
-    db.session.commit()
-    return jsonify({"message": "Updated"})
+        db.session.commit()
+        return jsonify({"message": "Updated"})
 
 
 # -------------------------
@@ -132,11 +132,11 @@ def update_session(id):
 
 @app.route('/sessions/<int:id>', methods=['DELETE'])
 def delete_session(id):
-     with session_lock:
-    session = WatchSession.query.get(id)  # fast lookup via index
-    db.session.delete(session)
-    db.session.commit()
-    return jsonify({"message": "Deleted"})
+    with session_lock:
+        session = WatchSession.query.get(id)  # fast lookup via index
+        db.session.delete(session)
+        db.session.commit()
+        return jsonify({"message": "Deleted"})
 
 
 # =========================================================
